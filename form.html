@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイトル</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <h1>Get the form and display</h1>
+    <form name="enquete">
+        <p>NAME: <input type="text" name="name"></p>
+        <p>
+        Man<input type="radio" name="sex" value="Man">
+        Woman<input type="radio" name="sex" value="Woman">
+         </p>
+        
+         <p><input type="button" name="confirm" value="submit"></p>
+
+    </form>
+
+
+
+   <script type="text/javascript">
+
+        
+    var btn = document.enquete.confirm;
+
+    btn.onclick = function(){
+        var name = document.enquete.name.value;
+        var sex = document.enquete.sex.value;
+
+        alert("My name is "+name+". Gender is a "  +sex);
+    };
+
+
+   </script>
+
+
+
+</body>
+</html>
